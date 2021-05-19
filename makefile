@@ -38,6 +38,7 @@ clean:
 	rm -rf *.synctex.gz
 	rm -rf *.bbl
 	rm -rf *.blg
+	rm -rf *.toc
 	rm -rf *~
 
 
