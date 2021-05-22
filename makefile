@@ -40,7 +40,7 @@ clean:
 	rm -rf *.blg
 	rm -rf *.toc
 	rm -rf *~
-
+	rm -rf *.pdf
 
 
 
