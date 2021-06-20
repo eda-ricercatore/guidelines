@@ -94,6 +94,7 @@ Revision history: \vspace{-0.3cm}
 \item Version 4.7, March 13, 2019. Add comment on how to include mathematical expressions in {\it Markdown} documents. In addition, fix minor errors.
 \item Version 4.8, January 22, 2020. Fix B{\scriptsize IB}\TeX\ key error (renamed for a publication), and added references regarding design by contract (or programming by contract, or contract programming) and Hoare logic.
 \item Version 4.9, March 11, 2021. Fix minor errors in guidelines for creating shared B{\scriptsize IB}\TeX\ databases.
+\item Version 5.0, June 20, 2021. Refactor \S\ref{ssec:TemplateInformationForTheAnnoteBibTeXField} to include information about publications in the {\tt Annote} field of {\sc Bib}\TeX\ entries.
 \end{enumerate}
 
 
@@ -413,31 +414,58 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 	\end{enumerate}
 \item Publication issues: \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
+	\item Repeated/duplicate {\sc Bib}\TeX\ entries: \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item Repeat entry. See $\backslash$cite\{BIbTeX keys\}.
+		\item 
+		\end{enumerate}
 	\item Dates of publication: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
 		\item Originally published in: 20XY.
 		\item Also, published in: 20XY.
 		\item Conference proceedings published in: 20XY.
+		\item Reprinted in 20XY by BLAH.
+		\item Copyright renewed in 20XY.
 		\end{enumerate}
 	\item Addresses of publisher(s): \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
 		\item Address of publisher, rather than conference location is: BLAH.
+		\item Address is officially stated as: BLAH.
+		\item Deprecated templates: \vspace{-0.1cm}
+			\begin{enumerate} \itemsep -1pt
+			\item Address is officially stated in: BLAH.
+			\end{enumerate}
+		\end{enumerate}
+	\item Alternate {\bf names} of publisher: \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item Alternate publisher name: BLAH.
+		\end{enumerate}
+	\item Alternate publication {\bf titles} or {\bf series} (and alternate {\bf volume number}): \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item Also, published as BLAH (old series title and old volume number).
+		\item Alternate series title: BLAH.
+		\end{enumerate}
+	\item {\bf Other publishers} of the publication: \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item Additional publisher: BLAH.
+		\item Distributed by: BLAH.
 		\item 
 		\end{enumerate}
-	\item Publication dates: \vspace{-0.2cm}
+	\item Alternate titles of the publication: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
+		\item Alternate title: {\it Another title for the document/publication}.
+		\item Alternate subtitle: {\it BLAH}.
+		\item English translation of title: BLAH.
 		\item 
 		\end{enumerate}
-	\item Publication dates: \vspace{-0.2cm}
+	\item Alternate series of publication: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
+		\item Possible series: BLAH.
 		\item 
 		\end{enumerate}
-	\item Publication dates: \vspace{-0.2cm}
+	\item Alternate editions of publication: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
-		\item 
-		\end{enumerate}
-	\item Publication dates: \vspace{-0.2cm}
-		\begin{enumerate} \itemsep -2pt
+		\item Reprinted, paperback edition.
 		\item 
 		\end{enumerate}
 	\item Multiple fields of publication: \vspace{-0.2cm}
@@ -453,22 +481,12 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 			\end{enumerate}
 		\end{enumerate}
 	\end{enumerate}
-\item Also, published as BLAH (old series title and old volume number).
-\item Alternate publisher name: BLAH.
-\item Additional publisher: BLAH.
-\item Reprinted in 20XY by BLAH.
-\item Distributed by: BLAH.
-\item Copyright renewed in 20XY.
-\item Alternate series title: BLAH.
-\item Address is officially stated in: BLAH.
-\item Received a copy of this {\it report/document/publication} by email.
-\item Alternate title: {\it Another title for the document/publication}.
-\item Alternate subtitle: {\it BLAH}.
-\item English translation of title: BLAH.
-\item Possible series: BLAH.
-\item Reprinted, paperback edition.
-\item Repeat entry. See $\backslash$cite\{BIbTeX keys\}.
-\item Received a copy of this report by email.
+\item Templates for the {\tt Howpublished} field: \vspace{-0.3cm}
+	\begin{enumerate} \itemsep -2pt
+	\item Received a copy of this {\it report/document/publication/thesis/dissertation} by email.
+	\item Received a copy of this report by email.
+	\item 
+	\end{enumerate}
 \item BibTeX key of English translation: BLAH.
 \item Translated by: BLAH.: \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
