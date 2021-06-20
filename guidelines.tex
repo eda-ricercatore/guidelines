@@ -384,7 +384,7 @@ In addition, to cite the specific page numbers of interest, use the {\sc Bib}\Te
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Template Information for the {\tt Annote} {\sc Bib}\TeX\ Field}
+\subsection{Template Information for the {\tt Annote} and {\tt Howpublished} {\sc Bib}\TeX\ Field}
 \label{ssec:TemplateInformationForTheAnnoteBibTeXField}
 
 This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field to help me identify particular information about the document/publication: \vspace{-0.3cm}
@@ -401,14 +401,14 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 		\item No authors are associated with this document, but the authors associated with the BibTeX-KEY document are also associated with this document; they are published as a set. Hence, instead of using anonymous contributors, I use their names instead.
 		\end{enumerate}
 	\end{enumerate}
-\item When citing from this entry, shift the names of the authors from the author field to the editor field. \vspace{-0.3cm}
-	\begin{enumerate} \itemsep -2pt
-	\item Since certain {\sc Bib}\TeX\ styles require a non-empty author field, I have placed the information of editors in the authors field. 
-	\item Swap them back when using them for publications.
-	%	For a lot, if not most of these publications, I have included the aforementioned statement to indicate this. I would debug this as I come across them.
-	\end{enumerate}
 \item Editors: BLAH ... BLAH ... BLAH.: \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
+	\item When citing from this entry, shift the names of the authors from the author field to the editor field. \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item Since certain {\sc Bib}\TeX\ styles require a non-empty author field, I have placed the information of editors in the authors field. 
+		\item Swap them back when using them for publications, by changing the {\tt Author} field to the {\tt Editor} field.
+		%	For a lot, if not most of these publications, I have included the aforementioned statement to indicate this. I would debug this as I come across them.
+		\end{enumerate}
 	\item Editors of the book: BLAH-1 and BLAH-2.
 	\item Editors of conference proceedings: BLAH-1, BLAH-2, and BLAH-3.
 	\end{enumerate}
@@ -440,10 +440,17 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 		\begin{enumerate} \itemsep -2pt
 		\item Alternate publisher name: BLAH.
 		\end{enumerate}
+	\item Organizations associated with the publication: \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item Organizations that are recognized as involved in this report: BLAH and BLAH.
+		\item BLAH and BLAH are recognized as organizations involved in this report.
+		\item 
+		\end{enumerate}
 	\item Alternate publication {\bf titles} or {\bf series} (and alternate {\bf volume number}): \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
 		\item Also, published as BLAH (old series title and old volume number).
 		\item Alternate series title: BLAH.
+		\item Regarding translations, and translated titles in a particular language, see the set of items for {\it {\bf Translation}-based templates}.
 		\end{enumerate}
 	\item {\bf Other publishers} of the publication: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
@@ -455,7 +462,11 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 		\begin{enumerate} \itemsep -2pt
 		\item Alternate title: {\it Another title for the document/publication}.
 		\item Alternate subtitle: {\it BLAH}.
-		\item English translation of title: BLAH.
+		\item Differences from the online version with the print version: \vspace{-0.1cm}
+			\begin{enumerate} \itemsep -1pt
+			\item Differences from the online version with the print version. Title of the print version: "How My Generation Broke America" (on the cover of the magazine). Title of the online version: "My Generation was Supposed to Level America's Playing Field. Instead, We Rigged It for Ourselves" (online article).
+			\item Differences from the online version with the print version. Title of the print version on the cover of the magazine: How My Generation Broke America. Title of the print version for the actual article: My Generation was Supposed to Level America's Playing Field. Instead, We Rigged It for Ourselves.
+			\end{enumerate}
 		\item 
 		\end{enumerate}
 	\item Alternate series of publication: \vspace{-0.2cm}
@@ -480,6 +491,7 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 			\item Also, published by BLAH in BLAH--BLAH.
 			\end{enumerate}
 		\end{enumerate}
+	\item Differences between 
 	\end{enumerate}
 \item Templates for the {\tt Howpublished} field: \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
@@ -487,19 +499,30 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 	\item Received a copy of this report by email.
 	\item 
 	\end{enumerate}
-\item BibTeX key of English translation: BLAH.
-\item Translated by: BLAH.: \vspace{-0.3cm}
+\item {\bf Translation}-based templates: \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
+	\item Translated by: BLAH.
+	\item BibTeX key of English translation: BLAH.
 	\item Original French title: BLAH.
 	\item Translated English title: BLAH.
+	\item Deprecated templates: \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item English translation of title: BLAH.
+		\item 
+		\end{enumerate}
 	\end{enumerate}
-\item Associated files are formerly named: {\tt BLAH.file\_extension}, ...
-\item Former BibTeX key is: {\tt Former BibTeX key}.
-\item Former BibTeX keys are: {\tt Former BibTeX key \#1} and {\tt Former BibTeX key \#2} \dots
-\item Keep BibTeX key as: BIPMJCGMWG2VIMcontributors2012. This enables the acronym to be differentiated from the term "contributors".
-\item Differences from the online version with the print version. Title of the print version: "How My Generation Broke America" (on the cover of the magazine), and "My Generation was Supposed to Level America's Playing Field. Instead, We Rigged It for Ourselves" (online article).
-\item Organizations that are recognized as involved in this report: BLAH and BLAH.
-\item BLAH and BLAH are recognized as organizations involved in this report.
+\item Associated files for the publication: \vspace{-0.3cm}
+	\begin{enumerate} \itemsep -2pt
+	\item Associated files are formerly named: {\tt BLAH.file\_extension}, ...
+	\item 
+	\end{enumerate}
+\item Tracking updates to {\sc Bib}\TeX\ keys: \vspace{-0.3cm}
+	\begin{enumerate} \itemsep -2pt
+	\item Former BibTeX key is: {\tt Former BibTeX key}.
+	\item Former BibTeX keys are: {\tt Former BibTeX key \#1} and {\tt Former BibTeX key \#2} \dots
+	\item Keep BibTeX key as: BIPMJCGMWG2VIMcontributors2012. This enables the acronym to be differentiated from the term "contributors".
+	\item 
+	\end{enumerate}
 \item Warning: DOI does not link back to the Web page {\tt URL}.
 \item Scans of the magazines are available at: {\tt URL}.
 \item Similar dissertations: $[${\tt List of {\rm {\sc Bib}\TeX}\ keys}$]$.
