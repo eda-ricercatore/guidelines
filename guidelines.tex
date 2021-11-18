@@ -700,7 +700,10 @@ For {\it C++} programs, the following tags shall be used in the comments: \vspac
 	\end{enumerate}
 \item @version {\it X.Y}: indicate the version ({\it X.Y}) of the file
 \item @section {\it SECTION\_NAME}: indicate the section ({\it SECTION\_NAME}) of the file, which can be: {\it LICENSE} or {\it DESCRIPTION}
-\item @param {\it x}: indicate the parameter ({\it x}) of the constructor or function
+\item @param {\it x}: indicate the parameter ({\it x}) of the constructor or function \vspace{-0.3cm}
+	\begin{enumerate} \itemsep -2pt
+	\item By default, use ``@param None'' to indicate that the function/method has no parameters.
+	\end{enumerate}
 \item @exception {\it Exception\_Name}, or @throws {\it Exception\_Name}: an exception that a function/method can throw
 \item @return {\it Return\_Statement}: indicate the return (type and) action of the function
 \item @see {\it reference}: a link to another element in the documentation; e.g., @see {\it Class\_Name}, or @see {\it Class\_Name\#member\_function\_name}
