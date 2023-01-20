@@ -147,7 +147,10 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 		\item If it does, do not add it to the  {\sc Bib}\TeX\ database.
 		\item Else, add it to the  {\sc Bib}\TeX\ database.
 		\end{enumerate}
-	\item Use the following format for creating {\sc Bib}\TeX\ keys: [first] author's last name, appended by the year of publication. E.g., my first conference paper would have the {\sc Bib}\TeX\ key Ong2004. If the year of publication is not known, use an approximate year, with XY for the last 2 digits in the year (e.g., 20XY). Alternatively, if you cannot determine if it was published this millennium or the previous millennium (or much earlier), use UNKNOWN for the ``year''. For example, use KleinbergUNKNOWN (preferred for unknown millennium), or Smith20XY (for unknown year in the 21$^{st}$ century).
+	\item Use the following format for creating {\sc Bib}\TeX\ keys: [first] author's last name, appended by the year of publication. E.g., my first conference paper would have the {\sc Bib}\TeX\ key Ong2004. If the year of publication is not known, use an approximate year, with XY for the last 2 digits in the year (e.g., 20XY). Alternatively, if you cannot determine if it was published this millennium or the previous millennium (or much earlier), use UNKNOWN for the ``year''. For example, use KleinbergUNKNOWN (preferred for unknown millennium), or Smith20XY (for unknown year in the 21$^{st}$ century). \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item For (last) names that end with a number, append the year to it anyway. We can still process the last four characters/digits of the year to determine the year of publication. I assume that there are no publications before 0 C.E. (common era).
+		\end{enumerate}
 	\item Remove duplicate entries in the {\sc Bib}\TeX\ database. {\bf WARNING! Before doing this, perform a union operation on the fields of the {\sc Bib}\TeX\ entries. For example, if a {\sc Bib}\TeX\ entry has information that the other {\sc Bib}\TeX\ entry does not have, or vice versa, merge the information to one {\sc Bib}\TeX\ entry.}: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
 		\item {\bf Rationale: Duplicate {\sc Bib}\TeX\ entries will cause problems in typesetting.}
