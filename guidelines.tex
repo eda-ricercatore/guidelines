@@ -128,6 +128,10 @@ Revision history: \vspace{-0.3cm}
 
 Collaborators of open source software and/or hardware projects that we are involved in should follow the {\it Code of Conduct} of the {\it Institute of Electrical and Electronics Engineers} (IEEE) \cite{IEEE2014b,IEEE2014a,IEEE2014} and the {\it ACM Code of Ethics and Professional Practice} of the {\it Association for Computing Machinery} (ACM) \cite{Gotterbarn2018b,Gotterbarn2018a,Gotterbarn2018,Brinkman2016a,ACMCouncil1992,Brinkman2017,Brinkman2016,Wolf2016,Anderson1993}, including the ``The Joint {ACM/IEEE-CS} Software Engineering Code of Ethics and Professional Practice'' \cite{Gotterbarn1999,Gotterbarn1997}. Also, actions of discrimination are not acceptable \cite{IEEE2014c}; we should intentionally commit to inclusive diversity, equity, and accessibility \cite{Rich2022} as well as honesty \cite{Oluo2019,Delgado2017b,McCord2017,Molinsky2017,Reiner2016,Sandberg2014,Chang2013a,Gini2013,Rees2013,Sandberg2013,Stoker2013,Hanson2011,Maxwell2010,Lafair2009,Brach2004,Peterson2004,Putnam2000,Carnegie1936} and accountability \cite{Eitel2020,Gladwell2019,Doerr2018,ACMPublicPolicyOfficeStaff2017,Gentry2016,Molinaro2016,Fitzgerald2015,Shapiro2015a,Boehm2014,Cloud2013,Rees2013,Gary2012,Connors2011,Cushing2010,Carbajal2008,Forest2007,Godin2006,Wessner2003,Christian2020,PartnershipOnAIStaff2020,Sabeti2018,Rheem2017,TINYhrIncStaff2015,Stephens2013,Parker2012}. In addition, we should embrace the values and principles of agile software development \cite{Beedle2001a,Carter2019,Pescio1997}. An additional guideline is ``Dave Packard's 11 simple rules'' \cite{HewlettPackardCompany2012}. \\
 %	Update references on DEIB and JEDI, justice, equity, diversity, and inclusion
+%	Add the following values and associated references:
+%	+ intellectual humility
+%	+ servant leadership
+
 
 
 %There are a significant amount of references for helping people to learn \LaTeX \cite{Voss2011,vanDongen2012,Syropoulos2003,Raymond2004,Mittelbach2004,Lamport1994,Krishnan2003,Krantz2001,Kottwitz2011,Koranne2011,Kopka2004,Knuth1999,Hoenig1998,Higham1998,Haralambous2007,Griffiths1997,Gratzer2007,Goossens2007,Goossens1999,Goossens1997,Diller1999,Bindner2011,Berry2009,UITCambridge2011,Scharrer2011,Pakin2008,Cormen2010,Syropoulos2004,Hamalainen2006} and related information/technologies.
@@ -167,7 +171,7 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 		\begin{enumerate} \itemsep -2pt
 		\item Author = \{\{[Name-of-Organization] staff\}\}, \vspace{-0.1cm}
 			\begin{enumerate} \itemsep -1pt
-			\item Append the word ``staff'' to the name of the organization, and use this as the author's name. Ensure that this name would typeset as it appears as one token by surrounding/encapsulating this name with round brackets (or parentheses). The name of the organization in this example is given within square brackets.
+			\item {\it \bf Append the word ``staff'' to the name of the organization, and use this as the author's name.} Ensure that this name would typeset as it appears as one token by surrounding/encapsulating this name with round brackets (or parentheses). The name of the organization in this example is given within square brackets.
 			\end{enumerate}
 		\item Its {\sc Bib}\TeX\ key, for the publication year of 20XY, is: NameOfOrganizationStaff20XY. \vspace{-0.1cm}
 			\begin{enumerate} \itemsep -1pt
@@ -175,7 +179,7 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 			\item If the name of an organization is a capitalized acronym, such as CIAO, concatenate its name with the word ``staff'' without capitalizing the first letter ``s'' in ``staff''. This also makes the {\sc Bib}\TeX\ key easier to read. An example for a publication year of 20XY is: CIAOstaff20XY.
 			\item Similarly, if the name of an organization ends with a capital letter, such as TrentoSMT, concatenate its name with the word ``staff'' without capitalizing the first letter ``s'' in ``staff''. This also makes the {\sc Bib}\TeX\ key easier to read. An example for a publication year of 20XY is: TrentoSMTstaff20XY.
 			\end{enumerate}
-		\item Likewise, for communities and non-profit organizations, the word ``members'' can be used instead, such as: \vspace{-0.1cm}
+		\item {\it \bf Likewise, for communities and non-profit organizations, the word ``members'' can be used instead}, such as: \vspace{-0.1cm}
 			\begin{enumerate} \itemsep -1pt
 			\item Author = \{\{[Name-of-Organization] members\}\},
 			\item NameOfOrganizationMembers20XY
@@ -224,7 +228,7 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 	\item AUTHOR, ``TITLE OF REPOSITORY,'' GitHub, Inc., San Francisco, CA, MONTH DAY, YEAR. Available online from \{$\backslash$it \{GitHub: GitHub USERNAME (or NAME OF ORGANIZATION)\}: at: $\backslash$url\{URL\}; March 16, 2016 was the last accessed date.
 	\item AUTHOR, ``TITLE OF PAPER,'' Cornell University, Ithaca, NY, MONTH DAY, YEAR. Available online (as Version XYZ) from \{$\backslash$it \{arXiv: FIELD(s)\}: at: $\backslash$url\{URL\}; March 16, 2016 was the last accessed date.
 	\item When {\sc Bib}\TeX\ entries are created for the aforementioned sources of information, populate the appropriate fields so that each information in the aforementioned sources are included in the {\sc Bib}\TeX\ entries.
-	\item For other organizations, communities, and groups, use the term ``contributors'' instead of ``members,'' unless otherwise specified.
+	\item {\it \bf For other organizations, communities, and groups, use the term ``contributors'' instead of ``members,'' unless otherwise specified.}
 	\end{enumerate}
 \item Refer to the file ``bibtex-template.txt'' for templates for selected {\sc Bib}\TeX\ entry types. The more information that you can put in, the easier you can protect yourself from accusations of plagiarism and to make it easier for people (including yourself) to find the reference again. This is especially true for Web-based references/resources.
 \item When the names of authors and editors are unknown, list them as ``Anonymous contributors'': \vspace{-0.3cm}
