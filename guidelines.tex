@@ -138,7 +138,7 @@ Collaborators of open source software and/or hardware projects that we are invol
 
 In addition, when there is a dispute about which technology, algorithm, design paradigm/style/pattern, process, or methodology to use, follow or adhere to the ``Code Wins Arguments'' \cite{Kushner2011,Zuckerberg2012} guideline. Also, when considerable effort has been invested in an automated regression testing/verification infrastructure, do not be afraid to ``move fast and break things'' \cite{Fong2011,Evangelista2012}. \\
 
-Lastly, we should adopt a mission-focused and value-based approach to participate in meetings and discussions for the project(s). We should be flexible/liberal enough to consider and explore viable alternate approaches to do things and solve problems \cite{Beedle2001,Beedle2001a}. Where disputes occur, a data-driven, fact-based approach based on the ``Code Wins Arguments'' guideline should be used to resolve conflicts.
+Lastly, we should adopt a mission-focused and value-based approach to participate in meetings and discussions for the project(s). We should be intellectually curious {\Huge (CITE THIS!!!)} and flexible/liberal enough to consider and explore viable alternate approaches to do things and solve problems \cite{Beedle2001,Beedle2001a}. Where disputes occur, a data-driven, fact-based approach based on the ``Code Wins Arguments'' guideline should be used to resolve conflicts.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Guidelines for Creating a Shared {\sc Bib}\TeX\ Database}
@@ -150,8 +150,9 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 	\begin{enumerate} \itemsep -2pt
 	\item Check if your desired {\sc Bib}\TeX\ key already exists in the {\sc Bib}\TeX\ database: \vspace{-0.1cm}
 		\begin{enumerate} %\itemsep -2pt
-		\item If it does, do not add it to the  {\sc Bib}\TeX\ database.
-		\item Else, add it to the  {\sc Bib}\TeX\ database.
+		\item If it does, and the {\sc Bib}\TeX\ entry for the publication already exists in the {\sc Bib}\TeX\ database, do not add it to the  {\sc Bib}\TeX\ database.
+		\item Else if the desired {\sc Bib}\TeX\ key exists in the database, but the {\sc Bib}\TeX\ entry for the publication does not exist in the {\sc Bib}\TeX\ database, repeat the process with an updated {\sc Bib}\TeX\ key (add the letter ``a'', select the next letter in the English alphabet, or pick the next number), and add information about the publication to the  {\sc Bib}\TeX\ database.
+		\item Else if the desired {\sc Bib}\TeX\ key and associated publication do not exist in the database, add it to the  {\sc Bib}\TeX\ database.
 		\end{enumerate}
 	\item Use the following format for creating {\sc Bib}\TeX\ keys: [first] author's last name, appended by the year of publication. E.g., my first conference paper would have the {\sc Bib}\TeX\ key Ong2004. If the year of publication is not known, use an approximate year, with XY for the last 2 digits in the year (e.g., 20XY). Alternatively, if you cannot determine if it was published this millennium or the previous millennium (or much earlier), use UNKNOWN for the ``year''. For example, use KleinbergUNKNOWN (preferred for unknown millennium), or Smith20XY (for unknown year in the 21$^{st}$ century). \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
@@ -179,12 +180,16 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 			\item If the name of an organization is a capitalized acronym, such as CIAO, concatenate its name with the word ``staff'' without capitalizing the first letter ``s'' in ``staff''. This also makes the {\sc Bib}\TeX\ key easier to read. An example for a publication year of 20XY is: CIAOstaff20XY.
 			\item Similarly, if the name of an organization ends with a capital letter, such as TrentoSMT, concatenate its name with the word ``staff'' without capitalizing the first letter ``s'' in ``staff''. This also makes the {\sc Bib}\TeX\ key easier to read. An example for a publication year of 20XY is: TrentoSMTstaff20XY.
 			\end{enumerate}
-		\item {\it \bf Likewise, for communities and non-profit organizations, the word ``members'' can be used instead}, such as: \vspace{-0.1cm}
+		\item {\it \bf Likewise, for communities and non-profit organizations, the words ``members'' or ``contributors'' can be used instead}, such as: \vspace{-0.1cm}
 			\begin{enumerate} \itemsep -1pt
 			\item Author = \{\{[Name-of-Organization] members\}\},
 			\item NameOfOrganizationMembers20XY
 			\item CIAOmembers20XY
 			\item TrentoSMTmembers20XY
+			\item Author = \{\{[Name-of-Organization] contributors\}\},
+			\item NameOfOrganizationContributors20XY
+			\item CIAOcontributors20XY
+			\item TrentoSMTcontributors20XY
 			\end{enumerate}
 		\end{enumerate} 
 	\end{enumerate}
@@ -192,7 +197,7 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 	\begin{enumerate} \itemsep -2pt
 	\item We justify this as follows.
 	\item When writing research publications, if we need to reduce the authors' first name to just their initial, we can use a script to transform their names.
-	\item If we need to use their full names in the reference list and if we do not include their full names, we have to look up these references again in the future to include their full names.
+	\item If we need to use their full names in the reference list, or to differentiate multiple authors with the same initials for their first name and the same last name, and if we do not include their full names, we have to look up these references again in the future to include their full names.
 	\end{enumerate}
 \item For terms that should be typeset as is, place them in between braces (i.e., curly brackets). That is, put curly braces around acronyms and mixed-case names. \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
