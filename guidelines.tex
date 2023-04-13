@@ -210,8 +210,15 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 \item For books and journal articles that have an associated digital object identifier (DOI) \cite{InternationalDOIFoundationStaff2017}, ensure that the {\tt Doi} field is included in the {\sc Bib}\TeX\ entry with the DOI of the publication. This makes it easier for people to access the Web page for the book or journal/conference paper.
 \item Stylistic validation of the references can be carried out as follows: \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
-	\item Include all {\sc Bib}\TeX\ keys in one citation in your \LaTeX\ document.
-	\item Typeset the \LaTeX\ document.
+	\item Include all {\sc Bib}\TeX\ keys in one citation, or a set of citations (for more than 1,000 {\sc Bib}\TeX\ keys, or even 100 {\sc Bib}\TeX\ keys, for a single \LaTeX\ {\tt $\backslash$cite} command), using the \LaTeX\ {\tt $\backslash$cite} command in a simple, template-based \LaTeX\ document: \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item The \LaTeX\ {\tt $\backslash$nocite\{$\ast$\}} command allows the generation of a bibliography, or list of references, containing all the {\sc Bib}\TeX\ entries without including all their {\sc Bib}\TeX\ keys in a \LaTeX\ {\tt $\backslash$cite} command (would fail to work for large {\sc Bib}\TeX\ databases, such as those with $>$10,000 {\sc Bib}\TeX\ entries), or set of \LaTeX\ {\tt $\backslash$cite} commands to partition a large number of {\sc Bib}\TeX\ keys into multiple \LaTeX\ {\tt $\backslash$cite} commands \cite[in \S2 Citations: \S2.4 No cite]{WikibooksContributors2021a}.
+		\item Use the {\tt typeset\_to\_pdf.py} {\it Python} script \cite{Ong2023a} to obtain the set of {\sc Bib}\TeX\ keys from a {\sc Bib}\TeX\ database, and include them in citations using multiple \LaTeX\ {\tt $\backslash$cite} commands, in a standalone \LaTeX\ file that can be included in a simple \LaTeX\ template for typesetting.
+		\end{enumerate}
+	\item Typeset the \LaTeX\ document: \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item Typesetting the \LaTeX\ document using the \LaTeX\ {\tt $\backslash$nocite\{$\ast$\}} command should run faster than using a \LaTeX\ {\tt $\backslash$cite} command or multiple \LaTeX\ {\tt $\backslash$cite} commands.
+		\end{enumerate}
 	\item Check that the font and style of the reference list is correct.
 	\item If there are errors, correct the errors as appropriate.
 	\item Finally, the {\sc Bib}\TeX\ database should be correct.
@@ -230,15 +237,15 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 	\item AUTHOR, Answer to ``QUESTION'', in \{$\backslash$it CATEGORY: QUESTION\}, Quora, Inc., Mountain View, CA, MONTH DATE, YEAR. Available online at: $\backslash$url\{URL\}; last accessed on August 26, 2014.
 	\item AUTHOR, ``TITLE OF POST'', in \{$\backslash$it BLOG TITLE\}, Quora, Inc., Mountain View, CA, MONTH DATE, YEAR. Available online at: $\backslash$url\{URL\}; last accessed on August 26, 2014.
 	\item AUTHOR, ``TITLE,'' Stack Exchange Inc., New York, NY, MONTH DAY, YEAR. Available online from \{$\backslash$it Stack Exchange Inc.: Stack Overflow: Questions\} at: $\backslash$url\{URL\}; March 16, 2016 was the last accessed date.
-	\item AUTHOR, ``TITLE OF REPOSITORY,'' GitHub, Inc., San Francisco, CA, MONTH DAY, YEAR. Available online from \{$\backslash$it \{GitHub: GitHub USERNAME (or NAME OF ORGANIZATION)\}: at: $\backslash$url\{URL\}; March 16, 2016 was the last accessed date.
+	\item AUTHOR, ``TITLE OF REPOSITORY,'' GitHub, Inc., San Francisco, CA, MONTH DAY, YEAR. Available online from \{$\backslash$it \{GitHub: GitHub user's (full) name or USERNAME (or NAME OF ORGANIZATION)\}: at: $\backslash$url\{URL\}; March 16, 2016 was the last accessed date.
 	\item AUTHOR, ``TITLE OF PAPER,'' Cornell University, Ithaca, NY, MONTH DAY, YEAR. Available online (as Version XYZ) from \{$\backslash$it \{arXiv: FIELD(s)\}: at: $\backslash$url\{URL\}; March 16, 2016 was the last accessed date.
 	\item When {\sc Bib}\TeX\ entries are created for the aforementioned sources of information, populate the appropriate fields so that each information in the aforementioned sources are included in the {\sc Bib}\TeX\ entries.
-	\item {\it \bf For other organizations, communities, and groups, use the term ``contributors'' instead of ``members,'' unless otherwise specified.}
+	\item {\it \bf For other organizations, communities, and groups, use the term ``contributors'' instead of ``members'' to indicate that only a subset of them contributed to a publication, unless otherwise specified.} Else, use ``members''.
 	\end{enumerate}
 \item Refer to the file ``bibtex-template.txt'' for templates for selected {\sc Bib}\TeX\ entry types. The more information that you can put in, the easier you can protect yourself from accusations of plagiarism and to make it easier for people (including yourself) to find the reference again. This is especially true for Web-based references/resources.
 \item When the names of authors and editors are unknown, list them as ``Anonymous contributors'': \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
-	\item An exception is made for a list of anonymous professors; use the following instead: [Name-of-Organization] professors.
+	\item An exception is made for a list of anonymous professors; use the following instead: [Name-of-Organization/University] professors.
 	\end{enumerate}
 \end{enumerate}
 
