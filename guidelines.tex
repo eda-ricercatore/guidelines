@@ -213,7 +213,7 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 	\item Include all {\sc Bib}\TeX\ keys in one citation, or a set of citations (for more than 1,000 {\sc Bib}\TeX\ keys, or even 100 {\sc Bib}\TeX\ keys, for a single \LaTeX\ {\tt $\backslash$cite} command), using the \LaTeX\ {\tt $\backslash$cite} command in a simple, template-based \LaTeX\ document: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
 		\item The \LaTeX\ {\tt $\backslash$nocite\{$\ast$\}} command allows the generation of a bibliography, or list of references, containing all the {\sc Bib}\TeX\ entries without including all their {\sc Bib}\TeX\ keys in a \LaTeX\ {\tt $\backslash$cite} command (would fail to work for large {\sc Bib}\TeX\ databases, such as those with $>$10,000 {\sc Bib}\TeX\ entries), or set of \LaTeX\ {\tt $\backslash$cite} commands to partition a large number of {\sc Bib}\TeX\ keys into multiple \LaTeX\ {\tt $\backslash$cite} commands \cite[in \S2 Citations: \S2.4 No cite]{WikibooksContributors2021a}.
-		\item Use the {\tt typeset\_to\_pdf.py} {\it Python} script \cite{Ong2023a} to obtain the set of {\sc Bib}\TeX\ keys from a {\sc Bib}\TeX\ database, and include them in citations using multiple \LaTeX\ {\tt $\backslash$cite} commands, in a standalone \LaTeX\ file that can be included in a simple \LaTeX\ template for typesetting.
+		\item Use the {\tt typeset\_to\_pdf.py} {\it Python} script \cite{Ong2023a} to obtain the set of {\sc Bib}\TeX\ keys from a {\sc Bib}\TeX\ database, and include them in citations using multiple \LaTeX\ {\tt $\backslash$cite} commands, in a standalone \LaTeX\ file that can be included in a simple \LaTeX\ template for typesetting; see \url{https://github.com/eda-ricercatore/bibtex-analytics/blob/master/typeset_to_pdf.py}.
 		\end{enumerate}
 	\item Typeset the \LaTeX\ document: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
@@ -454,7 +454,7 @@ In addition, to cite the specific page numbers of interest, use the {\sc Bib}\Te
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Template Information for the {\tt Annote} and {\tt Howpublished} {\sc Bib}\TeX\ Fields}
+\subsection{Template Information for the {\tt Annote} {\sc Bib}\TeX\ Field}
 \label{ssec:TemplateInformationForTheAnnoteBibTeXField}
 
 This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field to help me identify particular information about the document/publication: \vspace{-0.3cm}
@@ -476,7 +476,10 @@ This is a list of template information for the {\tt Annote} {\sc Bib}\TeX\ field
 		\end{enumerate}
 	\item Previously indicated set of co-authors: Blah-1, Blah-2, Blah-3, and Blah-4.
 	\item Alternate order of co-authors, since the order between the front cover and title page (and copyright page) is different): Blah-1, Blah-2, Blah-3, and Blah-4.
-	\item For publications that many contributors, select the major contributors to have their names listed and include the following to complete the list of co-authors: ``and other contributors'', or ``and other $[$PROJECT-NAME$]$ contributors''.
+	\item For publications that many contributors, select the major contributors to have their names listed and include the following to complete the list of co-authors: ``and other contributors'', or ``and other $[$PROJECT-NAME$]$ contributors''. \vspace{-0.2cm}
+		\begin{enumerate} \itemsep -2pt
+		\item This allows us to indicate the subset of members of the organization or community that contributed to the publication, data set, or project, instead of the more inclusive ``members'' term.
+		\end{enumerate}
 	\end{enumerate}
 \item Addressing the problem of namesakes: \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
