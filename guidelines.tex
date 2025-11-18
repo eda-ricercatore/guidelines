@@ -204,7 +204,7 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 \item If possible, use the full name for each author. \vspace{-0.3cm}
 	\begin{enumerate} \itemsep -2pt
 	\item We justify this as follows.
-	\item When writing research publications, if we need to reduce the authors' first name to just their initial, we can use a script to transform their names.
+	\item \textcolor{blue}{When writing research publications, if we need to reduce the authors' first name to just their initial, we can use a script to transform their names.}
 	\item If we need to use their full names in the reference list, or to differentiate multiple authors with the same initials for their first name and the same last name, and if we do not include their full names, we have to look up these references again in the future to include their full names.
 	\end{enumerate}
 \item For terms that should be typeset as is, place them in between braces (i.e., curly brackets). That is, put curly braces around acronyms and mixed-case names. \vspace{-0.3cm}
@@ -221,7 +221,10 @@ Guidelines for creating {\sc Bib}\TeX\ entries and the {\sc Bib}\TeX\ database, 
 	\item Include all {\sc Bib}\TeX\ keys in one citation, or a set of citations (for more than 1,000 {\sc Bib}\TeX\ keys, or even 100 {\sc Bib}\TeX\ keys, for a single \LaTeX\ {\tt $\backslash$cite} command), using the \LaTeX\ {\tt $\backslash$cite} command in a simple, template-based \LaTeX\ document: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
 		\item The \LaTeX\ {\tt $\backslash$nocite\{$\ast$\}} command allows the generation of a bibliography, or list of references, containing all the {\sc Bib}\TeX\ entries without including all their {\sc Bib}\TeX\ keys in a \LaTeX\ {\tt $\backslash$cite} command (would fail to work for large {\sc Bib}\TeX\ databases, such as those with $>$10,000 {\sc Bib}\TeX\ entries), or set of \LaTeX\ {\tt $\backslash$cite} commands to partition a large number of {\sc Bib}\TeX\ keys into multiple \LaTeX\ {\tt $\backslash$cite} commands \cite[in \S2 Citations: \S2.4 No cite]{WikibooksContributors2021a}.
-		\item Use the {\tt typeset\_to\_pdf.py} {\it Python} script \cite{Ong2023a} to obtain the set of {\sc Bib}\TeX\ keys from a {\sc Bib}\TeX\ database, and include them in citations using multiple \LaTeX\ {\tt $\backslash$cite} commands, in a standalone \LaTeX\ file that can be included in a simple \LaTeX\ template for typesetting; see \url{https://github.com/eda-ricercatore/bibtex-analytics/blob/master/typeset_to_pdf.py}.
+		\item Use the {\tt typeset\_to\_pdf.py} {\it Python} script \cite{Ong2023a} to obtain the set of {\sc Bib}\TeX\ keys from a {\sc Bib}\TeX\ database, and include them in citations using multiple \LaTeX\ {\tt $\backslash$cite} commands, in a standalone \LaTeX\ file that can be included in a simple \LaTeX\ template for typesetting; see \url{https://github.com/eda-ricercatore/bibtex-analytics/blob/master/typeset_to_pdf.py}.: \vspace{-0.1cm}
+			\begin{enumerate} \itemsep -1pt
+			\item \textcolor{blue}{Alternatively, an {\it OCaml} program/script for this task is: {\Huge [INSERT-URL-HERE!!!]}.}
+			\end{enumerate}
 		\end{enumerate}
 	\item Typeset the \LaTeX\ document: \vspace{-0.2cm}
 		\begin{enumerate} \itemsep -2pt
@@ -776,7 +779,7 @@ Use {\tt crossref} for {\sc Bib}\TeX\ entries using the {\sc Bib}\TeX\ entry typ
 
 When copying (and pasting) text from a document or a Web page, non-ASCII hidden characters may be accidentally copied from the source (document or Web page) to the {\sc Bib}\TeX\ database. Consequently, this can cause command-line utilities for UNIX-like operating systems, such as {\tt grep}, to fail to recognize the {\sc Bib}\TeX\ database as a text file. While some text editors or integrated development environments (IDEs) have features that highlight or indicate such non-ASCII hidden characters, they are not effective for finding/detecting these characters in large text files ({\sc Bib}\TeX\ databases in this case) without knowing what these characters are. If these characters are known, the search feature of these text editors or IDEs can find and delete these non-ASCII hidden characters. \\
 
-An alternative is to develop and use a script to concatenate all the {\sc Bib}\TeX\ keys (of a {\sc Bib}\TeX\ database) in a {\tt $\backslash$cite\{\}} \LaTeX\ command to automatically generate a listing of the references in a particular {\sc Bib}\TeX\ style of your choice. This results in the \LaTeX\ and {\sc Bib}\TeX\ interpreters parsing and processing your \LaTeX\ and {\sc Bib}\TeX\ sources. If non-ASCII hidden characters exist in your \LaTeX\ and {\sc Bib}\TeX\ source files, this process should abruptly pause your \LaTeX\ and {\sc Bib}\TeX\ interpretation processes to warn you of the syntax errors due to these characters. \\
+Some alternatives are to use the \LaTeX\ {\tt $\backslash$nocite\{$\ast$\}} command, or develop and use a script to concatenate all the {\sc Bib}\TeX\ keys (of a {\sc Bib}\TeX\ database) in a {\tt $\backslash$cite\{\}} \LaTeX\ command. These options would enable the automatic generation of a list of the references in a particular {\sc Bib}\TeX\ style of your choice. This results in the \LaTeX\ and {\sc Bib}\TeX\ interpreters parsing and processing your \LaTeX\ and {\sc Bib}\TeX\ sources. If non-ASCII hidden characters exist in your \LaTeX\ and {\sc Bib}\TeX\ source files, this process should abruptly pause your \LaTeX\ and {\sc Bib}\TeX\ interpretation processes to warn you of the syntax errors due to these characters. \\
 
 In addition, note that corruption in memory subsystems or storage devices (such as a solid-state drives) and data transfer between computers can result in corrupting text files to produce non-ASCII hidden characters in these files.
 
